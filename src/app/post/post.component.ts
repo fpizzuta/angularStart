@@ -7,10 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
   @Input() post;
+  @Input() apiURL;
+  
   
   constructor() { }
 
   ngOnInit() {
+    
+    console.log(this.apiURL);
   }
 
 }

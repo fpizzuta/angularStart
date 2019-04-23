@@ -4,8 +4,11 @@
 <div class="row">
   <div class="leftcolumn">
     <app-post 
-      *ngFor='let postObject of postList'
-      [post]="postObject"></app-post>
+      *ngFor="let postObject of postList" 
+      [post]="postObject"
+      [apiURL]="apiURL"
+    >
+    </app-post>
   </div>
   <div class="rightcolumn">
     <div class="card">
